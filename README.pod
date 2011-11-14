@@ -1,0 +1,49 @@
+=head1 NAME
+
+CoffeeMill
+
+=head1 DESCRIPTION
+
+CoffeeMill is a Movable Type plugin that helps to use coffee script in Movable Type template.
+
+=head1 INSTALL
+
+Copy (or SymLink) mt-plugin-coffee-mill/plugins/CoffeeMill/ to (MT_HOME)/plugins/CoffeeMill/
+Also copy (or SymLink) mt-plugin-coffee-mill/mt-static/plugins/CoffeeMill/ to (MT_STATIC)/plugins/CoffeeMill
+
+=head1 USAGE
+
+=over 4
+
+=item * STEP1
+
+Just create new Index Template, but with *.coffee in Output File.
+
+=item * STEP2
+
+Write coffee script.
+
+=item * STEP3
+
+Save, then script will automatically be compiled to Javascript, and to be published as *.js file.
+
+=back
+
+=head2 NOTE
+
+Templates with *.coffee outfile are recognized as having *.js outfile in template listing screen.
+
+=head1 SEE ALSO
+
+Coffee Script L<https://github.com/jashkenas/coffee-script>
+
+=head1 AUTHOR
+
+Akira Sawada
+
+=head1 LICENSES
+
+Released under the MIT License
+
+This package includes copy of a part of Coffee Script.
+Coffee Script is written by Jeremy Ashkenas and Released under the MIT License. See the COPYING file.

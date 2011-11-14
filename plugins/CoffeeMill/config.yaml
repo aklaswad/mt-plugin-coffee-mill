@@ -1,0 +1,9 @@
+name: CoffeeMill
+description: Coffee Script Compiler
+version: 0.1
+author_name: Akira Sawada
+author_link: https://github.com/aklaswad/
+applications:
+    cms:
+        callbacks:
+            template_param.edit_template: $CoffeeMill::MT::Plugin::CoffeeMill::transform_edit_template
