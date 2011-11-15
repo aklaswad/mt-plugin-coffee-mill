@@ -42,7 +42,11 @@ sub transform_edit_template {
             catch (e) {
                 alert('Compile error in coffee-script. Javascript would not to be updated.\n\n' + e);
             }
-            if ( compiled ) js = compiled;
+            if ( compiled ) {
+                compiled = compiled.replace( /\/\*\s*?</g, '<' );
+                compiled = compiled.replace( /\>\s*?\*\//g, '>' );
+                js = compiled;
+            }
             var text =
                 '<mt:ignore>Coffee__'
               + coffee

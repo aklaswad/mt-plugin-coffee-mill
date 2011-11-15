@@ -29,6 +29,14 @@ Save, then script will automatically be compiled to Javascript, and to be publis
 
 =back
 
+=head2 USING MT TAGS IN COFFEE SCRIPT
+
+When you want to put MT tags in coffee script, need to wrap each MT tag in block comment.
+
+    ###<mt:if name="danger">###
+    alert "DANGER!"
+    ###</mt:if>###
+
 =head2 NOTE
 
 Templates with *.coffee outfile are recognized as having *.js outfile in template listing screen.
